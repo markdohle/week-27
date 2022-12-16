@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+  <head>
+    <title>Tiered Bad Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="proxima-nova-web-fonts-master/fonts/fonts.css" />
+  </head>
+  
+  <body>
+    <div class="container">
+      <img src="mitxprologo.jpg" alt="MIT XPro Logo" width="250px" height="80px">
+      <h1 class="header-text">Tiered Bad Bank</h1>
+    </div>
+    
+    <p>Please review the concepts covered this module.</p>
+    <h2 id="local-state">Local State</h2>
+        <p>
+          "State" refers to changes in your program based on user input or interaction. 
+           An example of state changing would be when a user submits a login form that clears the form fields upon submission. 
+        </p>
+
+    <h2 id="converting-components-to-react">Converting Components to React</h2>
+        <p>
+          Refactoring your plain JavaScript code so that a frontend framework
+          like React can abstract it can to save you time. This is why you had to do it in 
+          the Bad Bank exercise.  Here are the necessary steps: 
+        </p>
+          <ul>
+            <li>Routing </li>
+            <li>State management</li>
+            <li>Data binding</li>
+          </ul>
+
+        <h2 id="routing-in-react">Routing in React</h2>
+        <p>
+          In the past, you may have routed your applications using &#39;onClick&#39; events, moving from page to page 
+          when a user clicked a particular link. However, the browser doesn't automatically 
+          remember what page the user has come from, so simple functionality like navigating with a back button is not possible. 
+          Now, you can use HashRouter and React to create routes and manage browser states. 
+          For more information, refer to the <a href="https://reactrouter.com/web/api/HashRouter">HashRouter documentation.</a> 
+        </p>
+
+        <h2 id="node-server">Node Server</h2>
+        <p>
+          A Node server allows you to serve files through an external router such as Express using the HTTP protocol. 
+          It allows interaction between your files and those of the users. When users interact with your website on the 
+          front end, it makes sure that your database is updated. Also, it ensures that 
+          data is retrieved from the database and displayed to the users. 
+        </p>
+
+        <h2 id="database-types">Database Types</h2>
+        <p>
+          There are several types of databases to choose from. This module, we will examine relational databases
+          and document-style databases. Relational databases store an object's data in separate tables, 
+          while document-style databases store all the data for a given object in one database instance, using a 
+          format similar to a JavaScript object. 
+        </p>
+        <h2 id="mongodb">MongoDB</h2>
+        <p>
+          MongoDB is the document-style database that was used in the Bad Bank exercise. Like other document databases, 
+          MongoDB uses JSON-like documents called &quot;BSON&quot; (binary representation of JSON objects) with 
+          optional database schemas. 
+        </p>
+        <p>
+          Here is an example of a MongoDB data point in a database: 
+        </p>
+        <pre><code class="lang-js">
+          var mydoc = {
+            <span class="hljs-symbol">_id:</span> ObjectId(<span class="hljs-string">"5099803df3f4948bd2f98391"</span>),
+            <span class="hljs-symbol">name:</span> { <span class="hljs-string">first:</span> <span class="hljs-string">"Alan"</span>, <span class="hljs-string">last:</span> <span class="hljs-string">"Turing"</span> },
+            <span class="hljs-symbol">birth:</span> <span class="hljs-keyword">new</span> Date(<span class="hljs-string">'Jun 23, 1912'</span>),
+            <span class="hljs-symbol">death:</span> <span class="hljs-keyword">new</span> Date(<span class="hljs-string">'Jun 07, 1954'</span>),
+            <span class="hljs-symbol">contributions:</span> [ <span class="hljs-string">"Turing machine"</span>, <span class="hljs-string">"Turing test"</span>, <span class="hljs-string">"Turingery"</span> ],
+            <span class="hljs-string">views :</span> NumberLong(<span class="hljs-number">1250000</span>)
+          }
+          </code></pre>
+
+          <h2 id="additional-points-for-self-study">Additional Points for Self-Study</h2>
+          <p>
+            Here are some self-study questions that can help you better understand the concepts
+            covered this module:
+          </p>
+            <ul>
+            <li>What is a data store?</li>
+            <li>What is context?</li>
+            <li>How does the request/response cycle work?</li>
+            <li>What is a route?</li>
+            <li>What is authentication? </li>
+            <li>What are promises, and how do they work?</li>
+            </ul>
+
+          <p class="footer">
+            © MIT xPRO 2020. All rights reserved.
+          </p>
+
+  </body>
+</html>
